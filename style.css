@@ -1,0 +1,156 @@
+.first-navbar {
+    background-color: #F5F5F5;
+}
+
+nav ul li {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(60, 55, 55);
+}
+.sec-navbar {
+    position: sticky;
+    top: 0;
+}
+
+
+.nd-list ul li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: flex;
+    padding: 2px;
+    position: relative;
+  }
+
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }  
+
+
+.search input {
+    background-color: #F5F5F5;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    padding: 8px;
+    width: 140px;
+    position: relative;
+}
+
+.search button {
+    background-color: #F5F5F5;
+    padding: 12px;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    right: 265px;
+    top: 14px;
+    
+}
+
+.search span i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+.first-section button {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.top-sell {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.top-sell button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    bottom: 75;
+    left: 45;
+    font-weight: 500;
+
+}
+
+
+.sec-section button {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: 155px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.row-img {
+    overflow-y: scroll;
+}
+
+.row-img::-webkit-scrollbar {
+    display: none;
+}
+
+.row-img img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+
+}
+
+
+.center {
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50px;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+.center img {
+    align-items: center;
+}
+
+
+footer .all-section {
+    border-bottom: 1px solid rgba(115, 107, 107, 0.468);
+}
